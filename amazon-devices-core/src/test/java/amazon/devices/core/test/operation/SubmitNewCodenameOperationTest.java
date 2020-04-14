@@ -77,6 +77,7 @@ public class SubmitNewCodenameOperationTest {
         DocumentModel result = (DocumentModel) automationService.run(ctx, SubmitNewCodenameOperation.ID, params);
         // check if the new properties have been add to the "specifi_name"property
         Assert.assertEquals("group", result.getProperty("specific_names").get(0).get("name_type").getValue());
+        Assert.assertEquals("group", result.getProperty("specific_names").get(0).get("name_type").getValue());
 
     }
 
