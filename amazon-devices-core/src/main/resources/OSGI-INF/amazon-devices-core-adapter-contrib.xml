@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<component name="amazon.devices.core.adapters.contrib">
+
+	<extension
+		target="org.nuxeo.ecm.core.api.DocumentAdapterService"
+		point="adapters">
+		<adapter class="amazon.devices.core.adapter.AMZDAdapter"
+			factory="amazon.devices.core.adapter.factory.AMZDAdapterFactory" />
+		<adapter class="amazon.devices.core.adapter.AMZFolderAdapter"
+			factory="amazon.devices.core.adapter.factory.AMZDAdapterFactory" />
+		<adapter class="amazon.devices.core.adapter.YearFolderAdapter"
+			factory="amazon.devices.core.adapter.factory.AMZDAdapterFactory" />
+		<adapter class="amazon.devices.core.adapter.ProductAdapter"
+			factory="amazon.devices.core.adapter.factory.AMZDAdapterFactory" />
+		<adapter class="amazon.devices.core.adapter.SubFolderAdapter"
+			factory="amazon.devices.core.adapter.factory.AMZDAdapterFactory" />
+	</extension>
+
+</component>

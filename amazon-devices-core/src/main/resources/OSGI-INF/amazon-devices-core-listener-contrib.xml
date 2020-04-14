@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<component name="amazon.devices.core.listeners.contrib">
+
+
+  <extension target="org.nuxeo.ecm.core.event.EventServiceComponent" point="listener">
+    <listener async="false" postCommit="false" name="userDeletedListener" class="amazon.devices.core.listener.UserDeletedListener">
+      <event>user_deleted</event>
+    </listener>
+    <listener async="false" postCommit="false" name="productAboutToCreateListener" class="amazon.devices.core.listener.ProductAboutToCreateListener">
+      <event>aboutToCreate</event>
+    </listener>
+    <listener async="false" postCommit="false" name="productBeforeModificationListener" class="amazon.devices.core.listener.ProductBeforeModificationListener">
+      <event>beforeDocumentModification</event>
+    </listener>
+    <listener async="false" postCommit="true" name="productCreatedSyncListener" class="amazon.devices.core.listener.ProductCreatedSyncListener">
+      <event>documentCreated</event>
+    </listener>
+    <listener async="true" postCommit="true" name="productCreatedAsyncListener" class="amazon.devices.core.listener.ProductCreatedAsyncListener">
+      <event>documentCreated</event>
+    </listener>
+    <listener async="false" postCommit="false" name="codenameBefoeModificationListener" class="amazon.devices.core.listener.CodenameBeforeModificationListener">
+      <event>beforeDocumentModification</event>
+    </listener>
+    <listener async="true" postCommit="true" name="updatePermissionEventListener" class="amazon.devices.core.listener.UpdatePermissionEventListener">
+      <event>updateProductAssetPermission</event>
+    </listener>
+    <listener async="false" postCommit="true" name="deviceAssetCreatedSyncListener" class="amazon.devices.core.listener.ProductAssetCreatedListener">
+      <event>documentCreated</event>
+    </listener>
+    <listener async="false" postCommit="false" name="relationSchemaEmptyDocumentListener" class="amazon.devices.core.listener.RelationSchemaEmptyDocumentListener">
+      <event>emptyDocumentModelCreated</event>
+    </listener>
+    <listener async="false" postCommit="true" name="creativeContentCreatedListener" class="amazon.devices.core.listener.CreativeContentCreatedListener">
+      <event>documentCreated</event>
+    </listener>
+    <listener async="false" postCommit="false" name="creativeAssetAboutToCreateListener" class="amazon.devices.core.listener.CreativeAssetAboutToCreateListener">
+      <event>aboutToCreate</event>
+    </listener>
+    <listener async="false" postCommit="true" name="threeDcreativeContentCreatedListener" class="amazon.devices.core.listener.ThreeDCreativeContentCreatedListener">
+      <event>documentCreated</event>
+    </listener>
+    <listener async="false" postCommit="true" name="contentCreatedListener" class="amazon.devices.core.listener.ContentCreatedListener">
+      <event>documentCreated</event>
+    </listener>
+  </extension>
+</component>

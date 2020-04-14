@@ -1,0 +1,17 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: amazon.devices.core
+Bundle-Version: 1.0.0
+Bundle-Name: amazon-devices-core
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: amazon.devices.core.amazon-devices-core;singleton=true
+Nuxeo-WebModule: org.nuxeo.ecm.webengine.app.WebEngineModule;name=selfregistration;extends=base;headless=true;package=amazon/devices/core/endpoint
+Nuxeo-Component: OSGI-INF/amazon-devices-core-versioning-policies.xml, 
+ OSGI-INF/amazon-devices-core-permission.xml,
+ OSGI-INF/amazon-devices-core-registration-point-auth-contrib.xml,
+ OSGI-INF/amazon-devices-core-operation-contrib.xml,
+ OSGI-INF/amazon-devices-core-listener-contrib.xml,
+ OSGI-INF/amazon-devices-core-adapter-contrib.xml,
+ OSGI-INF/amazon-devices-core-enricher-contrib.xml,
+ OSGI-INF/amazon-devices-core-web-ui-configuration-contrib.xml

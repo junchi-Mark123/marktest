@@ -1,0 +1,8 @@
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: amazon.devices.core
+Bundle-Version: 1.0.0
+Bundle-Name: amazon-devices-web
+Bundle-ManifestVersion: 1
+Bundle-SymbolicName: amazon.devices.core.amazon-devices-web;singleton=true
+Nuxeo-Component: OSGI-INF/user-registration-auth-contrib.xml

@@ -1,0 +1,17 @@
+<component name="amazon.devices.web.authentication.polymer.user-registration">
+
+  <extension point="startURL" target="org.nuxeo.ecm.platform.ui.web.auth.service.PluggableAuthenticationService">
+    <startURLPattern>
+      <patterns>
+        <pattern>user_registration</pattern>
+      </patterns>
+    </startURLPattern>
+  </extension>
+
+  <extension point="openUrl" target="org.nuxeo.ecm.platform.ui.web.auth.service.PluggableAuthenticationService">
+    <openUrl name="user-registration">
+      <grantPattern>/nuxeo/user_registration.*</grantPattern>
+    </openUrl>
+  </extension>
+
+</component>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<component name="amazon.devices.core.permissions">
+
+    <require>org.nuxeo.ecm.core.security.defaultPermissions</require>
+
+    <extension point="permissions" target="org.nuxeo.ecm.core.security.SecurityService">
+
+        <permission name="view_noDownload">
+            <include>Read</include>
+        </permission>
+
+        <permission name="DownloadWithRequest">
+            <include>Read</include>
+        </permission>
+
+        <permission name="Download">
+            <include>Read</include>
+        </permission>
+
+        <permission name="CreateContents">
+            <include>Read</include>
+            <include>ReadWrite</include>
+            <include>AddChildren</include>
+        </permission>
+
+        <permission name="Edit">
+            <include>Read</include>
+            <include>WriteProperties</include>
+            <include>ReadWrite</include>
+            <include>ManageWorkflows</include>
+        </permission>
+
+        <permission name="ReadWrite"></permission>
+    </extension>
+    
+    <extension point="permissionsVisibility" target="org.nuxeo.ecm.core.security.SecurityService">
+		<visibility>
+			<item order="10" show="false">Read</item>
+			<item order="20" show="false">ReadWrite</item>
+			<item order="30" show="true">view_noDownload</item>
+			<item order="40" show="true">Download</item>
+			<item order="50" show="true">DownloadWithRequest</item>
+			<item order="60" show="true">CreateContents</item>
+			<item order="70" show="true">Edit</item>
+		</visibility>
+	</extension>
+
+</component>

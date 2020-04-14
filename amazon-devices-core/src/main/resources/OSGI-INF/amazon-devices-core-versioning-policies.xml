@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<component name="amazon.devices.core.versioning.policies" version="1.0">
+
+	<extension
+		target="org.nuxeo.ecm.core.api.versioning.VersioningService"
+		point="policies">
+
+		<policy id="file-content-update" increment="MINOR" order="66">
+			<filter-id>file-content-filter</filter-id>
+		</policy>
+	</extension>
+
+	<extension
+		target="org.nuxeo.ecm.core.api.versioning.VersioningService" point="filters">
+		<filter id="file-content-filter">
+			<schema>file</schema>
+			<condition>#{previousDocument.file.content.digest !=
+				currentDocument.file.content.digest}
+			</condition>
+		</filter>
+	</extension>
+
+</component>

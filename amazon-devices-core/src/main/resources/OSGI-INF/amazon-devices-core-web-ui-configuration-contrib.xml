@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<component
+	name="amazon.devices.core.web.ui.configuration.contrib" version="1.0">
+	<require>org.nuxeo.web.ui.properties.contrib</require>
+
+	<extension target="org.nuxeo.runtime.ConfigurationService"
+		point="configuration">
+		<property name="org.nuxeo.web.ui.enrichers.document">hasProductAssetsReadAccess</property>
+	</extension>
+</component>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<component name="amazon.devices.core.operation" version="1.0">
+	<extension point="operations"
+		target="org.nuxeo.ecm.core.operation.OperationServiceComponent">
+		<operation
+			class="amazon.devices.core.operation.CreateUserAccessOperation" />
+		<operation
+			class="amazon.devices.core.operation.AddPermissionForCompanyOperation" />
+		<operation
+			class="amazon.devices.core.operation.DeleteUserFromUserAccessDocument" />
+		<operation
+			class="amazon.devices.core.operation.SetPasswordForUserAccessOperation" />
+		<operation
+			class="amazon.devices.core.operation.CreateProjectOperation" />
+		<operation
+			class="amazon.devices.core.operation.SubmitNewCodenameOperation" />
+	</extension>
+
+</component>
+ 

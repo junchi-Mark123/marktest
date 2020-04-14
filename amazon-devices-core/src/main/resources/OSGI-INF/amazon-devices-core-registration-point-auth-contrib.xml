@@ -1,0 +1,9 @@
+  <component name="amazon.devices.core.registration.authentication.endpoint">
+
+  <extension point="openUrl" target="org.nuxeo.ecm.platform.ui.web.auth.service.PluggableAuthenticationService">
+    <openUrl name="selfregistration">
+      <grantPattern>/nuxeo/site/selfregistration.*</grantPattern>
+    </openUrl>
+  </extension>
+
+</component>

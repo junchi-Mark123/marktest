@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<component name="amazon.devices.core.enricher.contrib">
+	<require>
+		org.nuxeo.ecm.core.io.MarshallerRegistry.marshallers
+	</require>
+	<extension target="org.nuxeo.ecm.core.io.MarshallerRegistry"
+		point="marshallers">
+		<register
+			class="amazon.devices.core.enricher.AMZDSubtypesJsonEnricher"
+			enable="true" />
+		<register
+			class="org.nuxeo.ecm.core.io.marshallers.json.enrichers.SubtypesJsonEnricher"
+			enable="false" />
+		<register
+			class="amazon.devices.core.enricher.AMZDCodenameJsonEnricher"
+			enable="true" />
+		<register
+			class="amazon.devices.core.enricher.AMZDProductAssetsReadAccessEnricher"
+			enable="true" />
+	</extension>
+</component>
