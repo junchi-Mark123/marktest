@@ -24,7 +24,7 @@ import amazon.devices.core.common.Constant;
  * @author frank.zheng
  *
  */
-@Operation(id = AddPermissionForCompanyOperation.ID, category = Constants.CAT_DOCUMENT, label = "AMZD.AddPermissionForCompanyOperation", description = "Add permission for company doc type")
+@Operation(id = AddPermissionForCompanyOperation.ID, category = Constants.CAT_DOCUMENT, label = "AMZD.AddPermissionForCompanyOperation", description = "Add permission for company doc type1212121212")
 public class AddPermissionForCompanyOperation {
 
 public static final String ID = "AMZD.AddPermissionForCompanyOperation";
